@@ -3,6 +3,13 @@
   src: url(./fonts/Proxima-Nova-Regular.otf)
 }
 
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
