@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(./fonts/Proxima-Nova-Regular.otf)
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
 .font-Montserrat-medium {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -35,6 +41,15 @@ body {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 600;
 }
+.font-ProximaNova-regular {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+}
+.font-ProximaNova-light {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 300;
+}
+
 .font-Poppins-bold {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
