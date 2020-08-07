@@ -2,6 +2,10 @@
   font-family: 'Proxima Nova';
   src: url(./fonts/Proxima-Nova-Regular.otf)
 }
+@font-face {
+  font-family: 'DIN condensed';
+  src: url(./fonts/DINWeb-CondMedium.ttf)
+}
 
 .red {
   background-color: red;
@@ -15,7 +19,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h1 {
+  font-size: 75px;
+}
+.font-DINCondensed-medium {
+  font-family: 'DIN condensed', sans-serif;
+  font-weight: 400;
+}
 .font-Montserrat {
   font-family: 'Montserrat', sans-serif;
 }

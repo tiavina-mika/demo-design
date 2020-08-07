@@ -17,9 +17,11 @@ const useStyles = createUseStyles((theme: any) => ({
         composes: 'flexRow justifyCenter alignCenter',
     },
     headerRoot: {
-        composes: 'flexColumn justifyCenter alignCenter font-ProximaNova-regular',
+        composes: 'flexColumn justifyCenter font-ProximaNova-regular',
         padding: theme.spacing(20),
-        fontSize: 22
+        fontSize: 22,
+        background: 'linear-gradient(top bottom, #CCC 0%, #F4F4F4 100%)',
+
     },
     menu: {
         composes: 'flexRow spaceBetween alignCenter stretchSelf',
@@ -51,7 +53,26 @@ const useStyles = createUseStyles((theme: any) => ({
     link: {
         color: theme.color.active,
         textDecoration: 'none'
-    }
+    },
+    // title
+    titleContainer: {
+        composes: 'flexColumn',
+        width: '75%',
+        marginTop: theme.spacing(22),
+    },
+    title: {
+        composes: 'flexRow stretchSelf font-DINCondensed-medium',
+        lineHeight: '1.25em',
+        letterSpacing: 4,
+        textTransform: 'uppercase',
+        webkitFontSmoothing: 'antialiased',
+    },
+    descriptionContainer: {
+        composes: 'flexRow stretchSelf font-ProximaNova-regular',
+        lineHeight: '1.8em',
+        fontSize: 24,
+        color: theme.color.secondary
+    },
 }));
 
 const Header: FC= () => {
@@ -59,6 +80,7 @@ const Header: FC= () => {
 
     return (
         <div className={classes.headerRoot}>
+            {/* menu */}
             <div className={classes.menu}>
                 <div className={classes.leftMenu}>
                     <div className={classes.logo}>
@@ -76,6 +98,21 @@ const Header: FC= () => {
                     ))}
                 </div>
             </div>
+            {/* page title */}
+            <div className={classes.titleContainer}>
+                <div className={classes.title}>
+                    <h1>
+                        Learn Git and GitHub without any code!
+                    </h1>
+                </div>
+                {/* page title */}
+                <div className={classes.descriptionContainer}>
+                    <p>
+                        {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
+                    </p>
+                </div>
+            </div>
+   
         </div>
     );
 };

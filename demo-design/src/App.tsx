@@ -7,9 +7,11 @@ import Header from './header/Header';
 
 const theme = {
   color: {
-      active: '#99CA3D', //green
-      secondary: '#0E203A', //blue dark
-      primary: '#1D174F', // blue dark
+      active: '#13BB70', //green
+      secondary: '#5B606B', //blue dark
+      // secondary: '#73E2B1', //green
+      // EFFDF6
+      primary: '#222324', // blue dark
       grey: '#EFF0F3', //grey light
       secondaryHover: '#7ea530', //green
       secondaryBlue: '#05396B', //blue lighter
